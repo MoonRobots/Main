@@ -1,0 +1,36 @@
+{
+  "name": "moonrobotscontracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "lint": "solhint ./contracts/*.sol",
+    "size": "truffle run contract-size",
+    "compile": "truffle compile",
+    "ganache-cli": "ganache -p 7546 -l 8500000 -e 1000000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/moonrobots/contracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/moonrobots/contracts/issues"
+  },
+  "homepage": "https://bitbucket.org/moonrobots/contracts#readme",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@truffle/hdwallet-provider": "^2.0.4",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^9.2.1",
+    "mocha-junit-reporter": "^2.0.2",
+    "truffle-contract-size": "^2.0.1"
+  }
+}
